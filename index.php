@@ -156,14 +156,13 @@
                 
             });
 
-		$( function() {
+		$(function() {
     			var availableTags = [
 				"Chennai",
 				"Cairo",
 				"Cali"
-      
-    			];
-    			$( "#fInput" ).autocomplete({
+			];
+    			$("#fInput").autocomplete({
       				source: availableTags
     			});
   		} );
