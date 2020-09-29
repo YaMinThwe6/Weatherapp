@@ -101,7 +101,7 @@
             
             <form>
                 
-                <div class="form-group">
+                <div class="form-group ui-widget">
     
                     <input type="text" name="input" class="form-control" id="fInput" placeholder="E.g: London, Chennai, Tokyo">
                     <input type="submit" id="myBtn">
@@ -131,6 +131,9 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
         
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         
@@ -151,6 +154,18 @@
                 }
                 
             });
+
+		$( function() {
+    			var availableTags = [
+				"Chennai",
+				"Cairo",
+				"Cali"
+      
+    			];
+    			$( "#fInput" ).autocomplete({
+      				source: availableTags
+    			});
+  		} );
             
         </script>
         
