@@ -114,7 +114,7 @@
             
                 if ($_GET){
                     
-                    if($report){
+                    if($content){
                     
                         echo '<div class="alert alert-info" role="alert"><p><b>'.$_GET["input"].'</b></p>'.$report.'</div>';
                         
