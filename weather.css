@@ -1,0 +1,54 @@
+         
+            body{
+                
+                padding:0;
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+                background-image:url("Unsplash1.jpg");
+                background-size:cover;
+                
+            }
+            
+            #heading{
+                
+                color:#f6d113;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                text-align:center;
+                
+            }
+            
+            #middle{
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+            }
+            
+            #label{
+                
+                font-size:20px;
+                text-align:center;
+                font-weight:bold;
+                
+            }
+            
+            input{
+                
+                margin:30px 0px;
+                
+            }
+            
+            #myBtn{
+                
+                display:none;
+                
+            }
+            
+            .container{
+                
+                width:700px;
+                
+            }
+ 
