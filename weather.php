@@ -1,3 +1,5 @@
+ <?php
+
     if($_GET){
         
         $e = $_GET["input"];
@@ -6,10 +8,9 @@
         
         $arrayweather=json_decode($content, true);
         
-        //print_r($arrayweather);
-        
         $temp = $arrayweather[main][temp]- 273.15;
         
         $report="The weather for the city ".$e." is ". $arrayweather[weather][0][description]." and the temperature is ".$temp."&degC. The wind speed is ".$arrayweather[wind][speed]." m/s. ";
         
     }
+?>
