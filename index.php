@@ -36,21 +36,7 @@
 	
         <script type="text/javascript" src="jquery.min.js"></script>
 	<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
-       <script>
-		
-		$( function() {
-    			var src = ["Chennai","Bangalore","Delhi","Mumbai","Hyderabad","New Delhi","Kolkata","Agra","London","New York","Paris","Moscow","Tokyo","Dubai","Singapore","Los Angeles","Seoul","Beijing","Las Vegas","Bangkok","Yangon","Mandalay","Ahmedabad","Pune","Amravati","Visakhapatnam","Surat","Jaipur","Nagpur","Barcelona","Madrid","Rome","Chicago","Toronto","San Francisco","Abu Dhabi","St.Petersburg","Amsterdam","Berlin","Prague","Washington","Istanbul","Doha","Sydney","Miami","Munich","Milan","San Diego","Vienna","Dublin","Vancouver","Boston","Zurich","Melbourne","Budapest","Houstan","Seattle","Montreal","Frankfurt","Sao Paulo","Tel Aviv","Copenhagen","Calgary","Orlando","Atlanta","Dallas","Hamburg","Osaka","Lisbon","Austin","Phoenix","Naples","Oslo","Denver","Stockholm","Philadelphia","Riyadh","Buenos Aires","San Jose","Brussels","Portland","Ottawa","Helsinki","Valencia","Brisbane","Warsaw","Minneapolis","Shangai","Lyon","Adelaide","Edmonton","Marseille","Muscat","Athens","Stuttgart","Rio De Janeiro","Baltimore","Auckland","Cologne","New Orleans","Kuwait","Kiev","Hanover","Perth","Minsk","Bucharest","Nashville","Dusseldorf","Manchester","Sacramento","Glasgow","Mexico","Salt Lake","Raleigh","Kracow","Coimbatore","Madurai","Udhagamandalam","Ooty","Tiruchirappalli","Tirunelveli","Salem","Pondicherry","Ambur","Cuddalore","Dindigul","Erode","Gudiyatham","Hosur","Kancheepuram","Karaikkudi","Karur","Kumarapalayam","Kumbakonam","Nagapattinam","Nagercoil","Neyveli","Pollachi","Pudukkottai","Rajapalayam","Ranipet","Sivakasi","Thanjavur","Thoothukkudi","Tiruvannamalai","Tiruppur","Vaniyambadi","Vellore","Agartala","Aizawl","Allahabad","Amritsar","Atal Nagar","Aurangabad","Bhopal","Bhubaneswar","Chandigarh","Dehradun","Dispur","Gandhinagar","Gangtok","Gurgaon","Imphal","Indore","Itanagar","Jalandhar","Jamshedpur","Jodhpur","Kanpur","Kochi","Kohima","Lucknow","Mangalore","Mysore","Nashik","Navi Mumbai","Naya Raipur","Noida","Panaji","Patna","Port Blair","Ranchi","Shillong","Shimla","Srinagar","Thane","Thiruvananthapuram","Udaipur","Varanasi","Vijayawada","Aligarh","Bareilly","Dhanbad","Faridabad","Ghaziabad","Gwalior","Guwahati","Howrah","Hubli–Dharwad","Jabalpur","Kalyan-Dombivli","Ludhiana","Meerut","Moradabad","Nashik","Pimpri-Chinchwad","Rajkot","Solaipur","Vadodara","Vasai-Virar","Warangal","A Coruña","Aachen","Aalborg","Aarhus","Aba","Abadan","Abaetetuba","Abakan","Abbotabad","Abbotsford","Abengourou","Abeokuta","Aberdeen","Abha","Abidjan","Abiko","Abilene","Abohar","Abu Al-Khaseeb","Abu Ghraib","Abuja","Açailândia","Acapulco","Acarigua","Accra","Achalpur","Acheng","Achinsk","Adama","Adana","Adapazarı","Addis Ababa","Aden","Adhamiyah","Adilabad","Adityapur","Adıyaman","Ado-Ekiti","Adoni","Cairo","Cali",
-      
-    			];
-    			$( "#fInput" ).autocomplete({
-      				source: function(request, response) {
-        				var results = $.ui.autocomplete.filter(src, request.term);
-        				response(results.slice(0, 5));
-				}
-    			});
-  		} );
-
-	</script>
+       <script src="autocomplete.js"></script>
         
     </head>
     
