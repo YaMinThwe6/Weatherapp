@@ -1,20 +1,6 @@
 <?php
 
-    if($_GET){
-        
-        $e = $_GET["input"];
-        
-        $content=file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".$e."&appid=2688e1f8e790143e5099e286fc481424");
-        
-        $arrayweather=json_decode($content, true);
-        
-        //print_r($arrayweather);
-        
-        $temp = $arrayweather[main][temp]- 273.15;
-        
-        $report="The weather for the city ".$e." is ". $arrayweather[weather][0][description]." and the temperature is ".$temp."&degC. The wind speed is ".$arrayweather[wind][speed]." m/s. ";
-        
-    }
+include("weather.php");
 
 ?>
 
@@ -88,24 +74,7 @@
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
-        <script type="text/javascript">
-            
-            //var input = $("#fInput");
-
-            $("#fInput").keyup(function(e) {
-
-                if (e.keyCode === 13 || e.which === 13) {
-
-                    e.preventDefault();
-
-                    $("#myBtn").click();
-                    
-                }
-                
-            });
-
-            
-        </script>
+        <script src="keyup.js"></script>
         
     </body>
     
